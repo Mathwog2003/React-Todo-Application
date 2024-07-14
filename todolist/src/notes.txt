@@ -1,0 +1,32 @@
+In class state component we cant use any hooks.
+
+Inside conditions, we cant call hooks;
+
+UseState function always return array of values. In that array there two values present.
+
+Need to use another funtion inside the setState function to update the values repeteldy inside the fucntion
+ setCount((count) => count + 1);
+
+if we want to pass a value from the returning of another function, u have to pass that function with another function
+function name()
+{
+    console.log("anam")
+}
+     const [count,setCount] = useState(name()); here the printing of anam will automaticly print when u do other events,like other state will work so..
+
+need to pass like this,
+     const [count,setCount] = useState(() => name())
+
+
+     todolist/src/AddItem.js todolist/src/App.js todolist/src/Content.js todolist/src/Footer.js todolist/src/Header.js todolist/src/index.css todolist/src/index.js todolist/src/ItemsList.js todolist/src/LineItem.js todolist/src/notes.txt
+
+
+js
+bootstap
+useStateuseeffect
+useref
+api integration
+axios
+routes
+component reusbility
+redux
